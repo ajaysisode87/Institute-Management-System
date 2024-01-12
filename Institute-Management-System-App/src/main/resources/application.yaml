@@ -1,0 +1,23 @@
+server:
+  port: 8787
+spring:
+  application:
+    name: INSTITUTE-MANAGEMENT-SYSTEM
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/institute_management_system
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+  jpa:
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+spring-doc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+
