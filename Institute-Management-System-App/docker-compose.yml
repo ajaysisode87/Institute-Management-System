@@ -35,7 +35,7 @@ services:
     networks:
       - my-network
     ports:
-      - "8080:8787"  # Map the exposed port from the Dockerfile
+      - "8181:8787"  # Map the exposed port from the Dockerfile
 
 networks:
   my-network:
